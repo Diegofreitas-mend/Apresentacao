@@ -27,10 +27,10 @@ app.get("/cadastro/:nome?", (req, res) => {
 });
 
 // inicia o servidor
-app.listen(process.env.PORT ?? 8080, (erro) => {
+app.listen(process.env.PORT ?? 3000, (erro) => {
   if (erro) {
     console.log("Erro ao iniciar o servidor.");
   } else {
-    console.log("Servidor iniciado na porta " + (process.env.PORT ?? 8080));
+    console.log("Servidor iniciado na porta " + (process.env.PORT ?? 3000));
   }
 });
