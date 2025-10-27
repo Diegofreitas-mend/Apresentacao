@@ -18,7 +18,6 @@ app.get("/consulta/:parametro", function(req,res){
     res.send("retorno consulta:" + req.params.parametro);
 })
 
-
 //rota com parametro opcional
 app.get("/cadastro/{:nome}", function(req,res){
     //req --> dados enviados pelo cliente
@@ -30,7 +29,6 @@ app.get("/cadastro/{:nome}", function(req,res){
     }
     
 })
-
 
 app.listen(process.env.PORT ?? 3000,function(erro){  // cria a aplicaÃ§Ã£o na porta 4000
     if (erro){
